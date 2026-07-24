@@ -1,6 +1,6 @@
 # 🧠 Post-Stroke Speech Therapy
 
-An AI-powered Flutter application designed to assist adults recovering from post-stroke speech impairments through personalized speech therapy exercises, real-time speech analysis, and progress tracking.
+> An AI-powered Flutter application designed to assist adults recovering from post-stroke speech impairments through personalized speech therapy exercises, real-time speech analysis, and progress tracking.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)
@@ -12,100 +12,86 @@ An AI-powered Flutter application designed to assist adults recovering from post
 
 ## 📖 Overview
 
-Stroke is one of the leading causes of speech impairment among adults. Traditional speech therapy often requires frequent clinical visits, making it difficult for many patients to receive consistent rehabilitation.
+Stroke is one of the leading causes of speech impairment among adults, significantly affecting communication and quality of life. Traditional speech therapy often requires regular hospital visits, making rehabilitation difficult for many patients.
 
-**Post-Stroke Speech Therapy** is a mobile application that provides interactive speech exercises enhanced with Artificial Intelligence to help patients practice independently while allowing therapists to monitor progress remotely.
+**Post-Stroke Speech Therapy** is an AI-powered Flutter application that enables stroke survivors to practice speech exercises independently while allowing therapists to monitor patient progress remotely. The application leverages TensorFlow Lite for on-device AI inference, Firebase for cloud services, and speech recognition technologies to provide real-time pronunciation and fluency feedback.
 
 ---
 
 ## 🎯 Objectives
 
-* Improve speech recovery for post-stroke patients.
-* Provide personalized therapy sessions.
-* Analyze pronunciation using AI.
-* Track patient progress over time.
-* Enable therapists to monitor rehabilitation remotely.
+- Improve speech rehabilitation for post-stroke patients.
+- Provide personalized speech therapy sessions.
+- Evaluate pronunciation and fluency using Artificial Intelligence.
+- Track rehabilitation progress through detailed reports.
+- Enable therapists to assign and monitor therapy sessions remotely.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 ### 👤 User Authentication
-
-* Firebase Authentication
-* Patient & Therapist roles
-* Secure login and registration
+- Secure Login & Registration
+- Firebase Authentication
+- Patient & Therapist Roles
+- Profile Management
 
 ### 🗣 Speech Therapy Exercises
-
-* Word Repetition
-* Phrase Practice
-* Picture Naming
-* Listening Exercises
-* Difficulty Levels (Easy, Medium, Hard)
+- Word Repetition
+- Phrase Practice
+- Picture Naming
+- Personalized Sessions
+- Multiple Difficulty Levels
 
 ### 🤖 AI Speech Analysis
-
-* TensorFlow Lite Model
-* MFCC Feature Extraction
-* Speech Fluency Scoring
-* Pronunciation Accuracy Evaluation
-* Real-time Feedback
+- TensorFlow Lite Speech Model
+- MFCC Feature Extraction
+- Speech Fluency Analysis
+- Pronunciation Accuracy Scoring
+- Real-time Feedback
 
 ### 📊 Progress Tracking
+- Daily Reports
+- Session History
+- Performance Analytics
+- Saved Therapy Sessions
 
-* Daily Reports
-* Session History
-* Performance Statistics
-* Exercise Results
+### 👨‍⚕️ Therapist Module
+- Assign Therapy Exercises
+- Create Custom Sessions
+- Monitor Patient Progress
+- Review Exercise Results
 
 ### ☁ Firebase Integration
-
-* Firestore Database
-* Firebase Storage
-* Authentication
-* Cloud-based Progress Management
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-
-* Flutter
-* Dart
-
-### Backend
-
-* Firebase Authentication
-* Cloud Firestore
-* Firebase Storage
-
-### AI & Machine Learning
-
-* TensorFlow Lite
-* MFCC Feature Extraction
-* Speech Recognition
-* Fluency Scoring Model
-
-### Development Tools
-
-* Android Studio
-* VS Code
-* Git
-* GitHub
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Storage
+- Cloud-based Synchronization
 
 ---
 
-## 📂 Project Structure
+# 🛠 Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend** | Flutter, Dart |
+| **Backend** | Firebase Authentication, Cloud Firestore, Firebase Storage |
+| **AI / ML** | TensorFlow Lite, MFCC Feature Extraction, Speech Recognition |
+| **Tools** | Android Studio, Visual Studio Code, Git, GitHub |
+
+---
+
+# 📂 Project Structure
 
 ```text
 lib/
 ├── models/
 ├── screens/
+│   ├── authentication/
 │   ├── exercises/
 │   ├── progress/
-│   └── authentication/
+│   ├── patient/
+│   └── therapist/
 ├── services/
 ├── utils/
 └── main.dart
@@ -117,41 +103,42 @@ assets/
 android/
 ios/
 web/
+linux/
+macos/
+windows/
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-### Prerequisites
+## Prerequisites
 
-* Flutter SDK
-* Dart SDK
-* Android Studio or VS Code
-* Firebase Project
-* Git
+- Flutter SDK
+- Dart SDK
+- Android Studio / VS Code
+- Firebase Project
+- Git
 
-### Installation
-
-Clone the repository:
+## Clone Repository
 
 ```bash
 git clone https://github.com/CodeWith-AR/Post-Stroke-Speech-Therapy.git
 ```
 
-Navigate to the project:
+## Navigate to Project
 
 ```bash
 cd Post-Stroke-Speech-Therapy
 ```
 
-Install dependencies:
+## Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
-Run the application:
+## Run Application
 
 ```bash
 flutter run
@@ -159,55 +146,174 @@ flutter run
 
 ---
 
-## 📸 Screenshots
+# 📸 Application Screenshots
 
-Add screenshots here.
+The following screenshots showcase the application's workflow, from authentication and role selection to AI-powered speech therapy exercises.
 
-Example:
+<table>
+<tr>
+<td align="center">
+<b>1️⃣ Login</b><br>
+<img src="APP SS/Correct Id Pass.jpeg" width="250"/>
+</td>
 
-```
-screenshots/
-├── login.png
-├── dashboard.png
-├── exercise.png
-├── progress.png
+<td align="center">
+<b>2️⃣ Create Account</b><br>
+<img src="APP SS/Create Account.jpeg" width="250"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>3️⃣ Role Selection</b><br>
+<img src="APP SS/Role Selection.jpeg" width="250"/>
+</td>
+
+<td align="center">
+<b>4️⃣ Patient Dashboard</b><br>
+<img src="APP SS/Patient Dashboard.jpeg" width="250"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>5️⃣ Therapist Dashboard</b><br>
+<img src="APP SS/Therapist Dashboard.jpeg" width="250"/>
+</td>
+
+<td align="center">
+<b>6️⃣ Create Therapy Session</b><br>
+<img src="APP SS/Create Session.jpeg" width="250"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>7️⃣ Assigned Exercises</b><br>
+<img src="APP SS/Assigned.jpeg" width="250"/>
+</td>
+
+<td align="center">
+<b>8️⃣ Word Repeat Exercise</b><br>
+<img src="APP SS/Word Repeat.jpeg" width="250"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>9️⃣ Phrase Practice</b><br>
+<img src="APP SS/Phrase Practice -Correct Speech.jpeg" width="250"/>
+</td>
+
+<td align="center">
+<b>🔟 Picture Naming</b><br>
+<img src="APP SS/Picture Naming.jpeg" width="250"/>
+</td>
+</tr>
+</table>
+
+---
+
+## 📱 Additional Application Screens
+
+| Module | Screenshot |
+|---------|------------|
+| Login Validation | `Invalid Id Pass.jpeg` |
+| Patient Profile | `Patient detail.jpeg` |
+| Personal Information | `Personal Information.jpeg` |
+| Assigned by Therapist | `Assigned by therapist.jpeg` |
+| Active Patient | `Active Patient.jpeg` |
+| Save Session | `Save Session.jpeg` |
+| Saved Session | `Session Saved.jpeg` |
+| Delete Session | `Delete Session.jpeg` |
+| Practice Frequency | `Practice frequency.jpeg` |
+| Primary Goal | `Primary Goal.jpeg` |
+| Profile Navigation | `Profile Navigation.jpeg` |
+| Session Practice | `Session Practice -Multiple Phrases & Multiple Repetitions.jpeg` |
+| Session Complete | `Session Complete.jpeg` |
+| Good Morning Exercise | `Good Morning.jpeg` |
+| I Went to Store Exercise | `I went to Store.jpeg` |
+| Red Lorry Yellow Lorry Exercise | `Red lori Yellow lori.jpeg` |
+| Sign Out | `Signout.jpeg` |
+
+---
+
+# 🤖 AI Pipeline
+
+```text
+User Speech
+      │
+      ▼
+Speech Recording
+      │
+      ▼
+MFCC Feature Extraction
+      │
+      ▼
+TensorFlow Lite Model
+      │
+      ▼
+Speech Fluency Score
+      │
+      ▼
+Real-Time Feedback
+      │
+      ▼
+Save Results to Firebase
 ```
 
 ---
 
-## 🔮 Future Enhancements
+# 🔮 Future Enhancements
 
-* AI-powered pronunciation correction
-* Multiple language support
-* Video consultation with therapists
-* Personalized therapy recommendations
-* Cloud AI model updates
-* Advanced analytics dashboard
+- AI-powered pronunciation correction
+- Multi-language speech support
+- Therapist video consultation
+- Adaptive learning recommendations
+- Cloud model updates
+- Advanced analytics dashboard
+- Offline speech evaluation
+- Voice biometrics for patient identification
 
 ---
 
-## 👨‍💻 Team Members
+# 👨‍💻 Team
 
-* **Muhammad Abdur Rehman**
-* **Muhammad Bilal**
-* **Ahmad Waseem Paracha**
+- **Muhammad Abdur Rehman**
+- **Muhammad Bilal**
+- **Ahmad Waseem Paracha**
 
 **Supervisor:** Mr. Imran Javed
 
-Department of Computer Science
+**Department of Computer Science**
 
-National University of Modern Languages (NUML), Rawalpindi
-
----
-
-## 📚 Academic Purpose
-
-This project was developed as a **Final Year Project (FYP)** for the Bachelor of Science in Computer Science (BSCS) program at the National University of Modern Languages (NUML), Rawalpindi.
+**National University of Modern Languages (NUML), Rawalpindi**
 
 ---
 
-## 📄 License
+# 📚 Academic Information
 
-This project is intended for educational and research purposes.
+This project was developed as the **Final Year Project (FYP)** for the Bachelor of Science in Computer Science (BSCS) program at the **National University of Modern Languages (NUML), Rawalpindi**.
 
-© 2026 Muhammad Abdur Rehman and Team. All rights reserved.
+---
+
+# ⭐ Project Highlights
+
+- ✅ Flutter Cross-Platform Mobile Application
+- ✅ TensorFlow Lite AI Integration
+- ✅ Firebase Authentication & Firestore
+- ✅ Speech Recognition
+- ✅ MFCC Feature Extraction
+- ✅ Real-Time Speech Evaluation
+- ✅ Therapist & Patient Modules
+- ✅ Personalized Speech Therapy
+- ✅ Progress Tracking Dashboard
+- ✅ Git Version Control
+
+---
+
+# 📄 License
+
+This project is developed for **educational and research purposes** as part of a university Final Year Project.
+
+© 2026 Muhammad Abdur Rehman, Muhammad Bilal, Ahmad Waseem Paracha. All Rights Reserved.
