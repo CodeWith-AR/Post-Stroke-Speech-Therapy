@@ -1,4 +1,4 @@
-# 🧠 Post-Stroke Speech Therapyy
+# 🧠 Post-Stroke Speech Therapy
 
 An AI-powered Flutter application designed to assist adults recovering from post-stroke speech impairments through personalized speech therapy exercises, real-time speech analysis, and progress tracking.
 
